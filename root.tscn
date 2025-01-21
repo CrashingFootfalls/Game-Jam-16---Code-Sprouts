@@ -2,4 +2,10 @@
 
 [node name="Root" type="Node"]
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+
+[node name="PlayerCollisionBox" type="CollisionShape2D" parent="Player"]
+
+[node name="PlayerArt" type="Sprite2D" parent="Player"]
