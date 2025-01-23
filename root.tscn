@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://d3634qc4hrnx4"]
+[gd_scene load_steps=4 format=3 uid="uid://d3634qc4hrnx4"]
 
+[ext_resource type="Script" path="res://player.gd" id="1_5uh41"]
 [ext_resource type="Texture2D" uid="uid://oldq7mra63wv" path="res://Assets/player.png" id="1_n8d7v"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_my12x"]
@@ -17,6 +18,7 @@ color = Color(0, 0, 0, 1)
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(-114, 244)
 scale = Vector2(3.39256, 3.39256)
+script = ExtResource("1_5uh41")
 
 [node name="PlayerCollisionBox" type="CollisionShape2D" parent="Player"]
 z_index = 1
