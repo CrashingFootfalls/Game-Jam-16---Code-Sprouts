@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bg0miagvw81uk"]
+[gd_scene load_steps=6 format=3 uid="uid://bg0miagvw81uk"]
 
-[ext_resource type="Texture2D" uid="uid://dseyey5ahm8v" path="res://assets/placeholder/poster_small.jpg" id="1_1864n"]
-[ext_resource type="FontFile" uid="uid://bmrx1ug776xq5" path="res://assets/TooMuchInk.ttf" id="2_q15s3"]
+[ext_resource type="Texture2D" uid="uid://dseyey5ahm8v" path="res://assets/placeholder/poster_small.jpg" id="1_2kf5t"]
+[ext_resource type="Script" path="res://scripts/menu.gd" id="2_pat7d"]
+[ext_resource type="Texture2D" uid="uid://57kwybcmfq30" path="res://assets/placeholder/mmButton.png" id="3_vxxpj"]
+[ext_resource type="FontFile" uid="uid://bejwtcacw7jop" path="res://assets/TooMuchInk.ttf" id="4_glylt"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kb3od"]
 
@@ -39,7 +41,7 @@ layout_mode = 2
 
 [node name="TextureRect" type="TextureRect" parent="Menu/HBoxContainer/CenterContainer"]
 layout_mode = 2
-texture = ExtResource("1_1864n")
+texture = ExtResource("1_2kf5t")
 
 [node name="VSeparator2" type="VSeparator" parent="Menu/HBoxContainer"]
 custom_minimum_size = Vector2(1, 0)
@@ -54,34 +56,53 @@ theme_override_constants/margin_top = 500
 [node name="VBoxContainer" type="VBoxContainer" parent="Menu/HBoxContainer/MarginContainer"]
 layout_mode = 2
 theme_override_constants/separation = 50
+script = ExtResource("2_pat7d")
 
-[node name="ColorRect" type="ColorRect" parent="Menu/HBoxContainer/MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(500, 100)
+[node name="Start" type="TextureButton" parent="Menu/HBoxContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+texture_normal = ExtResource("3_vxxpj")
 
-[node name="Label" type="Label" parent="Menu/HBoxContainer/MarginContainer/VBoxContainer/ColorRect"]
-layout_mode = 0
-offset_left = 140.5
-offset_top = 16.0
-offset_right = 337.5
-offset_bottom = 92.0
+[node name="Label" type="Label" parent="Menu/HBoxContainer/MarginContainer/VBoxContainer/Start"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -98.5
+offset_top = -38.0
+offset_right = 98.5
+offset_bottom = 38.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_q15s3")
+theme_override_fonts/font = ExtResource("4_glylt")
 theme_override_font_sizes/font_size = 75
 text = "Start
 "
 
-[node name="ColorRect2" type="ColorRect" parent="Menu/HBoxContainer/MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(500, 100)
+[node name="Quit" type="TextureButton" parent="Menu/HBoxContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+texture_normal = ExtResource("3_vxxpj")
 
-[node name="Label" type="Label" parent="Menu/HBoxContainer/MarginContainer/VBoxContainer/ColorRect2"]
-layout_mode = 0
-offset_left = 163.5
-offset_top = 15.0
-offset_right = 360.5
-offset_bottom = 91.0
+[node name="Label" type="Label" parent="Menu/HBoxContainer/MarginContainer/VBoxContainer/Quit"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -98.5
+offset_top = -38.0
+offset_right = 98.5
+offset_bottom = 38.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_q15s3")
+theme_override_fonts/font = ExtResource("4_glylt")
 theme_override_font_sizes/font_size = 75
-text = "Quit"
+text = "Quit
+"
+
+[connection signal="pressed" from="Menu/HBoxContainer/MarginContainer/VBoxContainer/Start" to="Menu/HBoxContainer/MarginContainer/VBoxContainer" method="_on_start_pressed"]
+[connection signal="pressed" from="Menu/HBoxContainer/MarginContainer/VBoxContainer/Quit" to="Menu/HBoxContainer/MarginContainer/VBoxContainer" method="_on_quit_pressed"]
