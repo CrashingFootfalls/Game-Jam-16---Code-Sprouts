@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5l0vgrm7t1cr"
-path="res://.godot/imported/bioChildExplode.png-c27657149159a678bbec08853c59a854.ctex"
+path="res://.godot/imported/bioChildExplode.png-22dde24fc758e4f63844a7a798c4ebf1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/bioChildExplode.png"
-dest_files=["res://.godot/imported/bioChildExplode.png-c27657149159a678bbec08853c59a854.ctex"]
+source_file="res://Assets/bioChildExplode.png"
+dest_files=["res://.godot/imported/bioChildExplode.png-22dde24fc758e4f63844a7a798c4ebf1.ctex"]
 
 [params]
 
