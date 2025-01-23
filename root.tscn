@@ -9,12 +9,14 @@
 [node name="Background" type="Node2D" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="Background"]
-offset_right = 200.0
-offset_bottom = 40.0
+offset_right = 50.0
+offset_bottom = 80.0
+scale = Vector2(139.144, 12.0431)
 color = Color(0, 0, 0, 1)
 
 [node name="Player" type="CharacterBody2D" parent="."]
-position = Vector2(-42, -41)
+position = Vector2(-114, 244)
+scale = Vector2(3.39256, 3.39256)
 
 [node name="PlayerCollisionBox" type="CollisionShape2D" parent="Player"]
 z_index = 1
