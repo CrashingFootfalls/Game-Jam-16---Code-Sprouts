@@ -1,0 +1,87 @@
+[gd_scene load_steps=4 format=3 uid="uid://bg0miagvw81uk"]
+
+[ext_resource type="Texture2D" uid="uid://dseyey5ahm8v" path="res://assets/placeholder/poster_small.jpg" id="1_1864n"]
+[ext_resource type="FontFile" uid="uid://bmrx1ug776xq5" path="res://assets/TooMuchInk.ttf" id="2_q15s3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kb3od"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1600.0
+offset_bottom = 960.0
+color = Color(0, 0, 0, 1)
+
+[node name="Menu" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 670
+theme_override_constants/margin_top = 400
+theme_override_constants/margin_right = 670
+theme_override_constants/margin_bottom = 400
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Menu"]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="Menu/HBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Menu/HBoxContainer/CenterContainer"]
+layout_mode = 2
+texture = ExtResource("1_1864n")
+
+[node name="VSeparator2" type="VSeparator" parent="Menu/HBoxContainer"]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+theme_override_constants/separation = 249
+theme_override_styles/separator = SubResource("StyleBoxEmpty_kb3od")
+
+[node name="MarginContainer" type="MarginContainer" parent="Menu/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 500
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/HBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="ColorRect" type="ColorRect" parent="Menu/HBoxContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menu/HBoxContainer/MarginContainer/VBoxContainer/ColorRect"]
+layout_mode = 0
+offset_left = 140.5
+offset_top = 16.0
+offset_right = 337.5
+offset_bottom = 92.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_q15s3")
+theme_override_font_sizes/font_size = 75
+text = "Start
+"
+
+[node name="ColorRect2" type="ColorRect" parent="Menu/HBoxContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menu/HBoxContainer/MarginContainer/VBoxContainer/ColorRect2"]
+layout_mode = 0
+offset_left = 163.5
+offset_top = 15.0
+offset_right = 360.5
+offset_bottom = 91.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_q15s3")
+theme_override_font_sizes/font_size = 75
+text = "Quit"
