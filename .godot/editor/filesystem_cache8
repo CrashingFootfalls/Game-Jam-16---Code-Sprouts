@@ -1,5 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1737574996
+::res://::1737644008
 icon.svg::CompressedTexture2D::5098050202131446551::1737241800::1737241852::1::::<><>::
 README.md::TextFile::-1::1737135419::0::1::::<><>::
 root.tscn::PackedScene::9190298091931642743::1737475273::0::1::::<><>::
+::res://Assets/::1737644137
+bioChild.png::CompressedTexture2D::8332008017705461934::1737644094::1737644141::1::::<><>::
+bioChildExplode.png::CompressedTexture2D::6902770600303536277::1737644118::1737644141::1::::<><>::
+bulletGuy.png::CompressedTexture2D::8426705272050860011::1737644075::1737644141::1::::<><>::
+healthPack.png::CompressedTexture2D::2868045670214215771::1737644102::1737644141::1::::<><>::
+mobEnemy1.png::CompressedTexture2D::2864948232607619105::1737644056::1737644141::1::::<><>::
+player.png::CompressedTexture2D::1005564389966400009::1737644108::1737644141::1::::<><>::
