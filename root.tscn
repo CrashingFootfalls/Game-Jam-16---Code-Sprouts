@@ -1,11 +1,28 @@
-[gd_scene format=3 uid="uid://d3634qc4hrnx4"]
+[gd_scene load_steps=3 format=3 uid="uid://d3634qc4hrnx4"]
+
+[ext_resource type="Texture2D" uid="uid://oldq7mra63wv" path="res://Assets/player.png" id="1_n8d7v"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_my12x"]
 
 [node name="Root" type="Node"]
 
 [node name="Background" type="Node2D" parent="."]
 
+[node name="ColorRect" type="ColorRect" parent="Background"]
+offset_right = 200.0
+offset_bottom = 40.0
+color = Color(0, 0, 0, 1)
+
 [node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(-42, -41)
 
 [node name="PlayerCollisionBox" type="CollisionShape2D" parent="Player"]
+z_index = 1
+position = Vector2(65, 68)
+scale = Vector2(0.809059, 0.809059)
+shape = SubResource("CapsuleShape2D_my12x")
 
 [node name="PlayerArt" type="Sprite2D" parent="Player"]
+position = Vector2(64, 69)
+scale = Vector2(0.267907, 0.267907)
+texture = ExtResource("1_n8d7v")
