@@ -1,7 +1,0 @@
-ColorRect
-Sprite2D
-CollisionShape2D
-RigidBody2D
-CharacterBody2D
-Node2D
-Node
