@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://bg0miagvw81uk"]
 
-[ext_resource type="Texture2D" uid="uid://dseyey5ahm8v" path="res://assets/placeholder/poster_small.jpg" id="1_2kf5t"]
+[ext_resource type="Texture2D" uid="uid://dseyey5ahm8v" path="res://Assets/placeholder/poster_small.jpg" id="1_2kf5t"]
 [ext_resource type="Script" path="res://scripts/menu.gd" id="2_pat7d"]
-[ext_resource type="Texture2D" uid="uid://57kwybcmfq30" path="res://assets/placeholder/mmButton.png" id="3_vxxpj"]
-[ext_resource type="FontFile" uid="uid://bejwtcacw7jop" path="res://assets/TooMuchInk.ttf" id="4_glylt"]
+[ext_resource type="Texture2D" uid="uid://57kwybcmfq30" path="res://Assets/placeholder/mmButton.png" id="3_vxxpj"]
+[ext_resource type="FontFile" uid="uid://bejwtcacw7jop" path="res://Assets/TooMuchInk.ttf" id="4_glylt"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kb3od"]
 
