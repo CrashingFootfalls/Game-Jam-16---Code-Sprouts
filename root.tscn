@@ -1,8 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://d3634qc4hrnx4"]
+[gd_scene load_steps=6 format=3 uid="uid://d3634qc4hrnx4"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_5uh41"]
+[ext_resource type="Texture2D" uid="uid://dt2qoaxtjbw58" path="res://Assets/wasteland_V2.png" id="1_claw8"]
 [ext_resource type="Texture2D" uid="uid://oldq7mra63wv" path="res://Assets/player.png" id="1_n8d7v"]
-[ext_resource type="Texture2D" uid="uid://cixo6kgdhc67a" path="res://Assets/background.png" id="1_ru0em"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e8y1y"]
+size = Vector2(6410, 20)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_my12x"]
 
@@ -12,19 +15,23 @@
 
 [node name="Sprite2D" type="Sprite2D" parent="Background"]
 position = Vector2(800, 480)
-texture = ExtResource("1_ru0em")
+texture = ExtResource("1_claw8")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Background"]
 position = Vector2(2400, 480)
-texture = ExtResource("1_ru0em")
+texture = ExtResource("1_claw8")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Background"]
 position = Vector2(4000, 480)
-texture = ExtResource("1_ru0em")
+texture = ExtResource("1_claw8")
 
 [node name="Sprite2D4" type="Sprite2D" parent="Background"]
 position = Vector2(5600, 480)
-texture = ExtResource("1_ru0em")
+texture = ExtResource("1_claw8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background"]
+position = Vector2(3195, 153)
+shape = SubResource("RectangleShape2D_e8y1y")
 
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(-114, 244)
